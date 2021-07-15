@@ -1,0 +1,31 @@
+html body {
+      padding-top: 4em;
+      text-align: center;
+      width: 80%;
+      margin: 0px auto;
+}
+
+@font-face {
+      font-family: 'roboto';
+      src: url(fonts/JMH-Typewriter-Bold_0.otf);
+      font-style: normal;
+      font-weight: 100;
+}
+
+@font-face {
+      font-family: 'roboto';
+      src: url(fonts/JMH-Typewriter-Black.otf);
+      font-style: normal;
+      font-weight: 200;
+}
+
+h1 {
+      font-family: roboto;
+      font-weight: 200;
+}
+
+p {
+
+      font-family: roboto;
+      font-weight: 100;
+}
