@@ -117,32 +117,41 @@
                 <div class="_BOX_1_0"> . Dolore a veniam reprehenderit tenetur doloremque quos
                         sequi est cum deleniti quis.</div>
         </div>
-
-</body>
-<script type="text/javascript">
-        let _button_0 = document.querySelector("._button_0");
-        _button_0.addEventListener("click", _click_0);
-        let _curve = document.querySelector("._BOX_1_1");
+        <script type="text/javascript">
+                let _button_0 = document.querySelector("._button_0");
+                _button_0.addEventListener("click", _click_0);
+                let _curve = document.querySelector("._BOX_1_1");
 
 
-        let _value = false;
+                let _value = false;
 
-        function _click_0()
-        {
-                _value = !_value;
-                _button_0.value = _value.toString();
-
-                if (_value)
+                function _click_0()
                 {
-                        _curve.setAttribute("src", "sketch_03/0.svg");
-                }
-                else
-                {
-                        _curve.setAttribute("src", "sketch_03/1.svg");
-                }
-                console.log(_value);
-        }
+                        _value = !_value;
+                        _button_0.value = _value.toString();
 
+                        if (_value)
+                        {
+                                _curve.setAttribute("src", "sketch_03/0.svg");
+                        }
+                        else
+                        {
+                                _curve.setAttribute("src", "sketch_03/1.svg");
+                        }
+                        console.log(_value);
+                }
+
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '299881420891881473',
+    channel: '355719584830980096'
+  })
 </script>
+        
+        
+</body>
+
 
 </html>
