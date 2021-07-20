@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+        <title>03</title>
+
+        <style>
+                ._A
+                {
+                        display: inline;
+                        font-family: monospace;
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        color: #eee;
+                }
+
+                ._B
+                {
+
+
+                        max-width: 620px;
+                        width: 85%;
+                        display: block;
+                        margin: 2em auto;
+
+
+                        background-color: #333;
+                        padding: 2em;
+                        box-shadow:
+                                0 4px 08px 0 rgba(0, 0, 0, 0.20),
+                                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+                }
+
+
+                ._button_0
+                {
+                        display: inline;
+                        color: #222;
+                        background-color: #aaa;
+                        box-shadow: 0 5px #222;
+                        border: none;
+                        border-radius: 5px;
+                        font-family: monospace;
+                        font-size: 1.0em;
+                        margin: 0em 1em;
+                        padding: 0.5em 1em;
+                        font-weight: bold;
+                }
+
+                *
+                {
+                        padding: 0px;
+                        margin: 0px;
+                }
+
+                ._button_0:active
+                {
+                        box-shadow: 0 2px #222;
+                        transform: translateY(2px);
+                }
+
+
+                .surfing-edge
+                {
+                        fill: none;
+                        stroke: hsl(260, 30%, 60%);
+                        stroke-width: 3px;
+                }
+
+                .graph-node
+                {
+                        fill: hsl(230, 75%, 50%);
+                }
+
+                .hugging-edge
+                {
+                        fill: none;
+                        stroke: hsl(200, 50%, 50%);
+                        stroke-width: 4px;
+                }
+
+                p
+                {
+                        width: 95%;
+                        max-width: 675px;
+                        margin: 2em auto;
+                        display: block;
+                        font-family: monospace;
+                        line-height: 1.5em;
+                }
+
+
+
+                ._BOX_1
+                {
+                        margin: 2em auto;
+
+                        font-family: monospace;
+                        font-weight: bold;
+                        background-color: #222;
+                        color: #eee;
+                        padding: 1em;
+                        max-width: 650px;
+                        width: 80%;
+                }
+
+                ._BOX_1_0
+                {
+                        display: inline;
+                }
+
+                ._BOX_1_1
+                {
+                        display: inline;
+                }
+
+        </style>
+</head>
+
+<body>
+
+        <div class="_B">
+                <div class="_A">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum obcaecati nam
+                </div>
+                <input class="_button_0" type="button" value="error">
+                <div class="_A">dicta ipsam ratione velit explicabo exercitationem nobis perferendis?</div>
+                <input class="_button_0" type="button" value="sit">
+                <div class="_A">dicta ipsam ratione velit explicabo exercitationem nobis perferendis?</div>
+
+        </div>
+
+
+        <div class="_BOX_1">
+                <div class="_BOX_1_0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <img class="_BOX_1_1" src="sketch_03/0.svg" alt="">
+                <div class="_BOX_1_0"> . Dolore a veniam reprehenderit tenetur doloremque quos
+                        sequi est cum deleniti quis.</div>
+        </div>
+
+</body>
+<script type="text/javascript">
+        let _button_0 = document.querySelector("._button_0");
+        _button_0.addEventListener("click", _click_0);
+        let _curve = document.querySelector("._BOX_1_1");
+
+
+        let _value = false;
+
+        function _click_0()
+        {
+                _value = !_value;
+                _button_0.value = _value.toString();
+
+                if (_value)
+                {
+                        _curve.setAttribute("src", "sketch_03/0.svg");
+                }
+                else
+                {
+                        _curve.setAttribute("src", "sketch_03/1.svg");
+                }
+                console.log(_value);
+        }
+
+</script>
+
+</html>
