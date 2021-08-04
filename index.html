@@ -166,6 +166,36 @@
                         console.log(_value);
                 }
 
+		
+		
+		
+		
+		                function getText()
+                {
+                        // read text from URL location
+                        var request = new XMLHttpRequest();
+
+                        let prefix_ = "https://drive.google.com/uc?export=download&id=";
+                        let id_ = "0B8kCsmD4QAr7SC1wV3N2c1N3TkE";
+                        let url_ = prefix_ + id_;
+
+                        request.open('GET', 'url', true);
+                        request.send(null);
+                        request.onreadystatechange = function()
+                        {
+                                if (request.readyState === 4 && request.status === 200)
+                                {
+                                        var type = request.getResponseHeader('Content-Type');
+                                        if (type.indexOf("text") !== 1)
+                                        {
+                                                let txt_ = request.responseText
+                                                console.log(txt_);
+                                                //return txt_;
+                                        }
+                                }
+                        }
+                }
+		getText();
         </script>
         
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
