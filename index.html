@@ -130,13 +130,14 @@
                         sequi est cum deleniti quis.</div>
         </div>
 	
+	<img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">
 	
 	<!--div class="commentbox"></div>
 	<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
 	<script>commentBox('5720328101691392-proj')</script-->
 	
-	<script defer src="https://cdn.commento.io/js/commento.js"></script>
-	<div id="commento"></div
+	<!--script defer src="https://cdn.commento.io/js/commento.js"></script>
+ 	<div id="commento"></div-->
 	
 	<!--iframe src="https://discord.com/widget?id=755364892642639923&theme=dark" width="350" height="500" allowtransparency="true" 
 		frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe-->
@@ -168,34 +169,6 @@
 
 		
 		
-		
-		
-		                function getText()
-                {
-                        // read text from URL location
-                        var request = new XMLHttpRequest();
-
-                        let prefix_ = "https://drive.google.com/uc?export=download&id=";
-                        let id_ = "0B8kCsmD4QAr7SC1wV3N2c1N3TkE";
-                        let url_ = prefix_ + id_;
-
-                        request.open('GET', 'url', true);
-                        request.send(null);
-                        request.onreadystatechange = function()
-                        {
-                                if (request.readyState === 4 && request.status === 200)
-                                {
-                                        var type = request.getResponseHeader('Content-Type');
-                                        if (type.indexOf("text") !== 1)
-                                        {
-                                                let txt_ = request.responseText
-                                                console.log(txt_);
-                                                //return txt_;
-                                        }
-                                }
-                        }
-                }
-		getText();
         </script>
         
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
